@@ -26,9 +26,9 @@ tokens = ['(', ')', '{', '}', '[', ']']
 while True:
 	print(f"{red}>>> {yellow}", end='')
 	thing = input()
-	if thing=='' or thing=='\n':
+	if thing in ['', '\n']:
 		continue
-	if thing=='\t' or thing=='    ':
+	if thing in ['\t', '    ']:
 		thing = input()
 	try:
 		print(f"{cyan}", end="")
